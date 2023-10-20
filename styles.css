@@ -5,39 +5,29 @@ body {
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    color: black;
-}
-
-.curtain {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    overflow: hidden;
-    transform: translateX(0);
-    transition: transform 2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.open {
-    transform: translateX(-100%);
 }
 
 .menu {
-    text-align: center;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
-ul {
+.nav {
     list-style: none;
-    padding: 0;
+    display: flex;
+    margin-left: 20px;
 }
 
-li {
-    display: inline;
-    margin-right: 20px;
+.nav li {
+    margin-right: 30px;
 }
 
 a {
@@ -51,14 +41,29 @@ a:hover {
     color: #00a;
 }
 
-.title {
+.logo {
+    width: 100px;
+    height: 50px;
+    background-image: url('Bilder/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-right: 20px;
+}
+
+.content {
+    padding: 100px;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin: 20px;
 }
 
 h1 {
     font-size: 36px;
-    margin: 0;
-    color: #fff;
+    color: #333;
+}
+
+p {
+    color: #333;
 }
